@@ -1,28 +1,16 @@
-#
-# Be sure to run `pod lib lint APCompositeFRC.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "APCompositeFRC"
   s.version          = "0.1.0"
-  s.summary          = "A short description of APCompositeFRC."
+  s.summary          = "A wrapper for NSFetchedResultsControllers collection."
   s.description      = <<-DESC
-                       An optional longer description of APCompositeFRC
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Wrapper which allows to interact with collection of NSFetchedResultsController instances as one.
+                       Mimics same API NSFetchedResultsController is providing.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/APCompositeFRC"
+  s.homepage         = "https://github.com/deszip/APCompositeFRC"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Deszip" => "raf.rafiki@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/APCompositeFRC.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Deszip" => "igor@alterplay.com" }
+  s.source           = { :git => "https://github.com/deszip/APCompositeFRC.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -33,6 +21,5 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'CoreData'
 end
